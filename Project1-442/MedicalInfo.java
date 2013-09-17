@@ -1,15 +1,39 @@
+import StudentCatalog;
+
 public class MedicalInfo {
 
 	private boolean Immunization;
 
 	private boolean Hold;
+	
+	private StudentName name;
 
-	public String GetRecords() {
-		return null;
+	private StudentId id;
+
+	public MedicalInfo(StudentName namey, StudentId idy, boolean immu)
+	{ name = namey; id = idy; Immunization = immu; }
+	
+	public String getName() {
+		return name;
 	}
 
-	public boolean CheckRecords() {
-		return false;
+	public void setName(StudentName name) {
+		this.name = name;
+	}
+	
+	public long getId() {
+		return id;
+	}
+
+	public void setId(StudentId id) {
+		this.id = id;
+	}
+
+	public boolean Hold = zero;
+	
+	public boolean CheckRecords(boolean Immunization) {
+		if (Immunization= false) Hold = 1 else Hold = 0;
+		return Hold;
 	}
 
 }

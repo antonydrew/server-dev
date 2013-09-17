@@ -1,3 +1,6 @@
+//import java.util.ArrayList;
+//import java.util.List;
+
 public class StudentCatalog {
 
 	private String StudentName;
@@ -6,12 +9,43 @@ public class StudentCatalog {
 
 	private String StudentAddress;
 
-	private AcademicInfo academicInfo;
+	private int StudentPhone;
 
-	private BillingInfo[] billingInfo;
+	public StudentCatalog(String name, long id, String address, int phone)
+	{ StudentName = name; StudentId = id; StudentAddress = address; StudentPhone = phone; }
+	
+	public String getName() {
+		return StudentName;
+	}
 
-	private MedicalInfo[] medicalInfo;
+	public void setName(String StudentName) {
+		this.StudentName = StudentName;
+	}
+	
+	public long getId() {
+		return StudentId;
+	}
 
-	private AcademicInfo[] academicInfo;
+	public void setId(long StudentId) {
+		this.StudentId = StudentId;
+	}
+	
+	public String getAddress() {
+		return StudentAddress;
+	}
+
+	public void setAddress(String StudentAddress) {
+		this.StudentAddress = StudentAddress;
+	}
+
+	public int getPhone() {
+		return StudentPhone;
+	}
+
+	public void setPhone(int Studentphone) {
+		this.StudentPhone = StudentPhone;
+	}
+	
+	
 
 }

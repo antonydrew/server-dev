@@ -11,5 +11,7 @@ public class Registrar {
 	private Program program;
 
 	private Finance finance;
+	
+	public Registrar() {}
 
 }
