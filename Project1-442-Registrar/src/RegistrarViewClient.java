@@ -144,7 +144,7 @@ public class RegistrarViewClient {
 	        
 	        //System.out.println("\n\nMust add more unit tests for each class & methods in here and print to terminal"); 
 	        if (EnrolledCourseCredits < 3) {
-	        	System.err.println("\n\nYou have NOT registered for a minimum of 3 credit hours, you are missing " + (3 - EnrolledCourseCredits) + " credit hours.");
+	        	System.err.println("\n\nYou have NOT registered for a minimum of 4 credit hours, you are missing " + (3 - EnrolledCourseCredits) + " credit hours.");
 	        	//method to return to add more classes.
 	        }
 	        	else {
